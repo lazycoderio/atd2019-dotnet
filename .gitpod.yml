@@ -1,0 +1,14 @@
+image:
+  file: Dockerfile
+
+tasks:
+  - init: dotnet restore
+
+
+ports:
+  - port: 6080
+    onOpen: open-browser
+  - port: 5900
+    onOpen: ignore
+  - port: 35900
+    onOpen: ignore
